@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section with Images -->
+        <header class="header">
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <img src="streamer-config-placeholder.png" alt="Streamer Configuration" class="menu-image">
+                        <a href="#">Streamer Configuration</a>
+                    </li>
+                    <li>
+                        <img src="personal-details-placeholder.png" alt="Your Personal Details" class="menu-image">
+                        <a href="#">Your Personal Details</a>
+                    </li>
+                    <li class="active">
+                        <img src="payment-method-placeholder.png" alt="Payment Method" class="menu-image">
+                        <a href="#">Payment Method</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <section class="payment-form">
+                <!-- Payment Options -->
+                <div class="payment-options">
+                    <h2>Choose your payment method</h2>
+                    <form>
+                        <!-- PayPal Option -->
+                        <div class="option">
+                            <div class="option-header">
+                                <input type="radio" id="paypal" name="payment" value="paypal">
+                                <label for="paypal">PayPal</label>
+                                <img src="paypal-placeholder.png" alt="PayPal Logo" class="payment-image">
+                            </div>
+                            <p class="option-text">Safe payment online. Credit card needed. PayPal account is not necessary.</p>
+                        </div>
+                        
+                        <!-- Credit Card Option -->
+                        <div class="option">
+                            <div class="option-header">
+                                <input type="radio" id="credit-card" name="payment" value="credit-card">
+                                <label for="credit-card">Credit Card</label>
+                                <img src="credit-card-placeholder.png" alt="Credit Card Logos" class="payment-image">
+                            </div>
+                            <p class="option-text">Safe money transfer using your bank account. Visa, maestro, discover, American Express.</p>
+                            <div class="credit-card-details">
+                                <label for="card-number">Credit Card Number</label>
+                                <input type="text" id="card-number" placeholder="xxxx xxxx xxxx xxxx">
+
+                                <div class="row">
+                                    <div class="column">
+                                        <label for="cvv">CVV Code</label>
+                                        <input type="text" id="cvv" placeholder="CVV">
+                                    </div>
+                                    <div class="column">
+                                        <label for="expiry-date">Expiry Date</label>
+                                        <input type="text" id="expiry-date" placeholder="MM/YY">
+                                    </div>
+                                </div>
+                                
+                                <label for="card-name">Name on Card</label>
+                                <input type="text" id="card-name" placeholder="Cardholder Name">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Summary Section -->
+                <div class="summary">
+                    <h2>Summary</h2>
+                    <p><strong>Packet:</strong> Full package (100+ channels)</p>
+                    <p><strong>Duration:</strong> 3 months</p>
+                    <p><strong>Price:</strong> €159.99</p>
+                    
+                    <!-- Additional Info Box -->
+                    <div class="info-box">
+                        <div class="info-item">
+                            <img src="shipping-placeholder.png" alt="Shipping Information Icon" class="info-image">
+                            <p><strong>Streaming box shipping information:</strong> Lorem ipsum is placeholder text for web design.</p>
+                        </div>
+                        <div class="info-item">
+                            <img src="money-back-placeholder.png" alt="Money Back Guarantee Icon" class="info-image">
+                            <p><strong>30 days money-back guarantee!</strong></p>
+                        </div>
+                    </div>
+                    
+                    <a href="#">Have a discount code?</a>
+                </div>
+            </section>
+
+            <!-- Bottom Buttons -->
+            <div class="buttons">
+                <button class="go-back-btn">Go Back</button>
+                <button class="checkout-btn">Check Out</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

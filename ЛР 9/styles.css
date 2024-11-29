@@ -1,0 +1,170 @@
+/* General settings */
+body {
+    font-family: Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+.header {
+    background-color: #f1f1f1;
+    padding: 10px 0;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    flex: 1;
+    text-align: center;
+}
+
+.menu ul li img.menu-image {
+    display: block;
+    margin: 0 auto 5px;
+    width: 100px;
+    height: 100px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.menu ul li.active a,
+.menu ul li a:hover {
+    background-color: #0078d7;
+    color: #fff;
+}
+
+/* Main Section */
+.payment-form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.payment-options, .summary {
+    width: 48%;
+}
+
+.payment-options h2, .summary h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.option {
+    margin-bottom: 20px;
+}
+
+.option-header {
+    display: flex;
+    align-items: center;
+}
+
+.option-header img.payment-image {
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.option-text {
+    margin: 10px 0 0 20px;
+    color: #555;
+}
+
+.credit-card-details label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.credit-card-details input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.credit-card-details .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.credit-card-details .column {
+    width: 48%;
+}
+
+.summary p {
+    margin: 10px 0;
+}
+
+.info-box {
+    margin-top: 15px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.info-item img.info-image {
+    margin-right: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.info-item p {
+    margin: 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.go-back-btn,
+.checkout-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.go-back-btn {
+    background-color: #ccc;
+    color: #000;
+}
+
+.checkout-btn {
+    background-color: #0078d7;
+    color: #fff;
+}
+
+.checkout-btn:hover {
+    background-color: #005bb5;
+}
+
+.go-back-btn:hover {
+    background-color: #aaa;
+}
